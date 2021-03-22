@@ -11,17 +11,18 @@ import SectionCard from '../Section/SectionCard'
 import CustomLink from '../Misc/CustomLink'
 import Waves from '../Misc/Waves'
 import Footer from '../Misc/Footer'
+import MobileNavbar from '../Navbar/MobileNavbar'
 
 export default function Home() {
     return (
         <>
-            
             <Navbar />
             <Hero />
             <Waves />
+            <MobileNavbar />
             <div>
                 <div className="cta">
-                    <Card background="white" title="Tech Stack" >
+                    <Card data-aos="zoom-out" background="white" title="Tech Stack" >
                         <TechStack />
                         <CustomLink linkText="View GitHub Account" link="https://github.com/Navkcalbeht32" target="_blank"/>
                     </Card>
@@ -59,9 +60,9 @@ export default function Home() {
                     </div>
 
                     <div className="section-images">
-                        <img className="desk" src={DBDesk} />
-                        <img className="tablet" src={DBTablet} />
-                        <img className="phone" src={DBPhone} />
+                        <img data-aos-delay="100" data-aos="flip-left" className="desk" src={DBDesk} />
+                        <img data-aos-delay="300" data-aos="flip-right" className="tablet" src={DBTablet} />
+                        <img data-aos-delay="500" data-aos="flip-up" className="phone" src={DBPhone} />
                     </div>
 
                 </Section>

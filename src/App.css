@@ -1,4 +1,6 @@
 
+
+
 .page-wrapper {
     width: 90%;
     margin: 0 auto;
@@ -19,4 +21,6 @@
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+
+
 

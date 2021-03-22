@@ -5,9 +5,9 @@ export default function Hero() {
        <div className="hero">
             <div className="hero-wrapper">
                 <h1>Web Development.</h1>
-                <h1>Ecommerce.</h1>
+                <h1 data-aos="fade-left">Ecommerce.</h1>
                 <div className="hero-gradient">
-                    <div className="hero-gradient-cover">
+                    <div className="hero-gradient-cover" data-aos="fade-up" data-aos-duration="2000">
                         <h1>& More.</h1>
                     </div>
                 </div>

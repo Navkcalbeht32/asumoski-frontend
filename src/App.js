@@ -4,6 +4,10 @@ import Home from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
 import SinglePost from './components/Post/SinglePost'
 import Post from './components/Post/Post'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
+
 
 function App() {
   return (
