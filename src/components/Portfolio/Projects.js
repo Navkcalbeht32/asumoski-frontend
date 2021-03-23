@@ -14,6 +14,7 @@ export default function Projects() {
                 subtitle,
                 slug,
                 categories,
+                type,
                 mainImage{
                     asset->{
                         _id,
@@ -27,7 +28,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <>  
+        <div>  
             {projectData && projectData.map((project, index) => (
                 <Link to={"/portfolio/" + project.slug.current} key={project.slug.current}>
                     <div className="portfolio-card">
@@ -47,6 +48,6 @@ export default function Projects() {
                 </Link>
             
             ))}
-        </>
+        </div>
     )
 }   

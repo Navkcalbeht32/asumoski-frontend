@@ -9,22 +9,24 @@ import Posts from './Posts'
 export default function Portfolio() {
 
     return (
-        <>  
+        <div className="portfolio-page">  
             <div className="portfolio-heading">
-                <h1>Portfolio</h1>
+                <h2>Recent Work</h2>
+                <h3>Live Projects, Repositories, & Case Studies</h3>
+                <br/>
             </div>
             <hr/>
-            <div className="section">
+            <div className="">
                 <div className="portfolio-wrapper">
                     <Projects />
                 </div>   
              </div>
             <hr/>
-            <div className="section">
+            <div className="">
                 <div className="portfolio-wrapper">
-                    <Posts />
+                    {/* <Posts /> */}
                 </div>   
              </div>
-        </>
+        </div>
     )
 }   
