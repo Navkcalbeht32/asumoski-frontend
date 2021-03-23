@@ -5,7 +5,7 @@
     a {
         display: flex;
         align-items: center;
-        color: #4097FC;
+        color: #0324ec99;
         cursor: pointer;
     }
     
@@ -33,10 +33,11 @@
 footer {
     width: 100%;
     height: 200px;
-    background-color: #111111;
-    color: #414141;
+    background-color: #fafafa;
+    color: #a8a8a8;
     position: relative;
     margin: 70px 0 0;
+    font-weight: 300;
     
     img {
         height: 60px;

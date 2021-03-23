@@ -16,10 +16,8 @@ import MobileNavbar from '../Navbar/MobileNavbar'
 export default function Home() {
     return (
         <>
-            <Navbar />
             <Hero />
             <Waves />
-            <MobileNavbar />
             <div>
                 <div className="cta">
                     <Card data-aos="zoom-out" background="white" title="Tech Stack" >
