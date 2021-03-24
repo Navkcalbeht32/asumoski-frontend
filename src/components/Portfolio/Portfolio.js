@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { Row, Col } from 'react-bootstrap'
+import React from 'react'
 import './Portfolio.scss'
-import sanityClinet from '../../client'
 import Projects from './Projects'
-import Posts from './Posts'
 
 export default function Portfolio() {
 

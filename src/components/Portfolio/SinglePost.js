@@ -4,6 +4,12 @@ import './Portfolio.scss'
 import sanityClinet from '../../client'
 import imageUrlBuilder from '@sanity/image-url'
 import Loader from '../Misc/Loader'
+import BlockContent from '@sanity/block-content-to-react'
+import BlockContentComponent from './BlockContent'
+
+
+
+
 
 const builder = imageUrlBuilder(sanityClinet);
 function urlFor(source) {
@@ -12,7 +18,7 @@ function urlFor(source) {
 
 export default function SinglePage() {
     const [singlePost, setSinglePost] = useState(null);
-    const {slug } = useParams();
+    const { slug } = useParams();
 
     useEffect(() => {
         sanityClinet
@@ -35,6 +41,24 @@ export default function SinglePage() {
     if (!singlePost) return <Loader />
 
     return (
-        <></>
+        <div className="singlepost">
+            <div className="singlepost-wrapper">
+                <div>
+                    <div>
+                        <h1>{singlePost.title}</h1>
+                        <div className="singlepost-author">
+                            <img src={urlFor(singlePost.authorImage).url()} />
+                            <p>{singlePost.name}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="singlepost-coverimage">
+                    <img src={urlFor(singlePost.mainImage).url()} />
+                </div>
+                <div className="singlepost-block">
+                    <BlockContentComponent singlePost={singlePost.body} />
+                </div>
+            </div>
+        </div>
     )
 }   

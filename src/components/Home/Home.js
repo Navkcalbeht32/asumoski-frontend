@@ -49,11 +49,11 @@ export default function Home() {
                     <div className="section-cards">
                         
                         <SectionCard title="Search Engine Optimization" text="I build sites for desktop & mobile devices, with speed and user experience prioritized">
-                            <CustomLink linkText="My SEO Strategy" link="" />
+                            <CustomLink linkText="Learn More about Next.js" link="https://nextjs.org/" target="_blank" />
                         </SectionCard>
                         
                         <SectionCard title="Server-Side Rendering" text="I build sites for desktop & mobile devices, with speed and user experience prioritized" >
-                            <CustomLink linkText="Server-Side Tools" link="" />
+                            <CustomLink linkText="Learn More about SSR" link="https://developers.google.com/web/updates/2019/02/rendering-on-the-web" target="_blank" />
                         </SectionCard>
                     </div>
 

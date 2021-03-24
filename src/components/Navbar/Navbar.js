@@ -22,7 +22,7 @@ export default function Navbar() {
                 <ul className="header-links">
                    <NavLink icon={LinkedIn} link="https://www.linkedin.com/in/alexandersumoski/" />
                    <NavLink icon={GitHub} link="https://github.com/Navkcalbeht32" />
-                   <NavLink icon={Email}/>
+                   {/* <NavLink icon={Email}/> */}
                 </ul>
             </div>
         </header>

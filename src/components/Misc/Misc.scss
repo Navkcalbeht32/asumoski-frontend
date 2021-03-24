@@ -187,3 +187,12 @@ footer {
       transform: rotate(360deg);
     }
   }
+
+  .code {
+
+    &-filename h4 {
+        color: #373737;
+        font-weight: 300;
+        padding: 10px 0 0 10px;
+    }
+  }
