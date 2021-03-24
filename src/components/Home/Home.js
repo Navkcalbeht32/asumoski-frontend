@@ -38,7 +38,7 @@ export default function Home() {
                         <br/>
                         <br/>
                         <br/>
-                        <CustomLink linkText="View Portfolio" link='/' />
+                        <CustomLink linkText="View Portfolio" link='/portfolio' />
                     </Card>
                 </div>
                 <div className="section-background" />

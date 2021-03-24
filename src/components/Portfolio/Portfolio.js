@@ -12,7 +12,7 @@ export default function Portfolio() {
         <div className="portfolio-page">  
             <div className="portfolio-heading">
                 <h2>Recent Work</h2>
-                <h3>Live Projects, Repositories, & Case Studies</h3>
+                <h3>Live Projects & Repositories </h3>
                 <br/>
             </div>
             <hr/>

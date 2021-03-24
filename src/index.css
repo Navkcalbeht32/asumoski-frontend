@@ -17,6 +17,8 @@ button {
   outline: none;
 }
 
+::selection { background: rgb(41, 244, 251); }
+
 body {
   margin: 0;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',

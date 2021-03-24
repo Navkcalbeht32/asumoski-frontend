@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Portfolio.scss'
 import sanityClinet from '../../client'
+import Loader from '../Misc/Loader'
 
 
 export default function Projects() {
@@ -14,7 +15,8 @@ export default function Projects() {
                 subtitle,
                 slug,
                 categories,
-                type,
+                github,
+                tags,
                 mainImage{
                     asset->{
                         _id,
@@ -27,11 +29,13 @@ export default function Projects() {
             .catch(console.error)
     }, []);
 
+    if (!projectData) return <Loader />
+
     return (
-        <div>  
+        <div data-aos="zoom-in-up">  
             {projectData && projectData.map((project, index) => (
-                <Link to={"/portfolio/" + project.slug.current} key={project.slug.current}>
-                    <div className="portfolio-card">
+                    <article className="portfolio-card">
+                        <Link to={"/portfolio/" + project.slug.current} key={project.slug.current}>
                         <div className="portfolio-card-wrapper">
                             <div className="portfolio-card-image">
                             <img 
@@ -42,11 +46,12 @@ export default function Projects() {
                             <div className="portfolio-card-text">
                                 <h3>{project.title}</h3>
                                 <h5>{project.subtitle}</h5>
+                                {/* <span>{project.tags}</span> */}
                             </div>
                         </div>
-                    </div>
-                </Link>
-            
+                        </Link>
+                    </article>
+              
             ))}
         </div>
     )

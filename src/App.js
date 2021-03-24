@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './components/Home/Home'
 import Portfolio from './components/Portfolio/Portfolio'
-import SinglePost from './components/Post/SinglePost'
+import SinglePost from './components/Portfolio/SinglePost'
 import Post from './components/Post/Post'
 import 'aos/dist/aos.css'
 
@@ -23,9 +23,9 @@ function App() {
     <MobileNavbar />
       <Switch>
         <Route component={Home} exact path='/' />
+        <Route component={SinglePost} path='/portfolio/:slug' />
         <Route component={Portfolio} path='/portfolio' />
-        <Route component={SinglePost} path='/post/:slug' />
-        <Route component={Post} path='/post' />
+        
       </Switch>
     </BrowserRouter>
   );
