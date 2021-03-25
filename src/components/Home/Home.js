@@ -44,8 +44,7 @@ export default function Home() {
                 <div className="section-background" />
                 <Section 
                     title="Fast & Responsive"
-                    subtitle="I build sites for desktop & mobile devices, with speed and user experience prioritized"
-                >
+                    subtitle="I build sites for desktop & mobile devices, with speed and user experience prioritized">
                     <div className="section-cards">
                         
                         <SectionCard title="Search Engine Optimization" text="I build sites for desktop & mobile devices, with speed and user experience prioritized">
