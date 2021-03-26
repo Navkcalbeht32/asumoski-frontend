@@ -49,23 +49,23 @@ hr {
         width: 100%;
         height: fit-content;
         cursor: pointer;
-        transition: ease 0.3s;
-        border-radius: 0px !important;
+        border-radius: 10px !important;
         border: 1px solid transparent !important;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.0);
+        box-shadow: 1px 10px 60px rgba(57, 55, 206, 0.0);
     
         &-wrapper {
             width: fit-content;
             border-radius: 0px;
             margin: 10px;
             display: flex;
-            flex-direction: row;
+            transition: all ease 0.2s;
         }
     
         &-image {
             height: 240px;
             width: 40%;
-            overflow: hidden;
+            border-radius: 30px;
+            transition: all ease 0.6s;
         }
     
         &-image img {
@@ -73,12 +73,13 @@ hr {
             height: 100%;
             object-fit: cover;
             border-radius: 5px;
-
+            transition: all ease 0.3s;
         }
 
         &-text {
-            padding: 20px 10px;
+            padding: 20px;
             width: 60%;
+            transition: all ease 0.7s;
 
             h3 {
                 color: #373737;
@@ -97,11 +98,21 @@ hr {
                 padding: 10px;
             }
         }
+
+        &:hover &-wrapper {
+            box-shadow: 1px 15px 60px rgba(57, 55, 206, 0.1);
+        }
         
-        &:hover {
-            box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, 0.1);
-            transform: translate(-5px, -1px);
-            border: 1px solid #eaeaea !important;
+        &:hover &-image {
+            transform: translate(0px, 0px);
+        }
+
+        &:hover &-image img {
+            transform: scale(1.02);
+        }
+
+        &:hover &-text {
+            transform: translate(5px, 0px);
         }
     
     }
