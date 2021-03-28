@@ -23,8 +23,6 @@ export default function MobileNavbar() {
                     <h5>About</h5>
                 </a> */}
                 
-                
-                
             </div>
         </div>
     )

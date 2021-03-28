@@ -1,3 +1,43 @@
+.section-4-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 40px 0;
+
+    &-title {
+        font-weight: 600;
+        color: #0A2540;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        
+
+        img {
+            width: 50px;
+            height: auto;
+        }
+
+        h4 {
+            font-weight: 300;
+            width: 80%;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        h5 {
+            font-weight: 300;
+            width: 80%;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+    }
+}
+
 .hero {
 
     h1 {

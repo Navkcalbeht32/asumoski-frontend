@@ -1,9 +1,5 @@
 
 
-.section {
-    margin: 260px 0;
-}
-
 hr {
     width: 90%;
     max-width: 1000px;
@@ -108,7 +104,7 @@ hr {
         }
 
         &:hover &-image img {
-            transform: scale(1.02);
+            transform: scale(1.02) translateX(-14px);
         }
 
         &:hover &-text {
@@ -228,7 +224,7 @@ hr {
 
             img {
                 width: 100%;
-                max-width: 500px;
+                max-width: 700px;
                 object-fit: contain;
             }
 
