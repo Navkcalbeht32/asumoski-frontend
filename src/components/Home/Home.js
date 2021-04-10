@@ -40,7 +40,7 @@ export default function Home() {
                             <CustomLink linkText="Learn More about Next.js" link="https://nextjs.org/" target="_blank" />
                         </SectionCard>
                         
-                        <SectionCard text="SEO is more important than ever for getting to your website seen. Building accessible applications comes at the forefront of my work." >
+                        <SectionCard text="SEO is more important than ever for getting your website seen. Building accessible applications comes at the forefront of my work." >
                             <CustomLink linkText="Learn More about SEO" link="https://moz.com/beginners-guide-to-seo" target="_blank" />
                         </SectionCard>
                     </div>
