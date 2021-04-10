@@ -12,17 +12,13 @@ export default function Navbar() {
             <div className="header-wrapper">
                 <a href="/">
                     <div className="header-logo">
-                        <h3> 
-                            <span>ALEX </span>  
-                            SUMOSKI
-                        </h3>
+                        <h3> <span>ALEX </span>SUMOSKI</h3>
                         <h2>DEVELOPER</h2>
                     </div>
                 </a>
                 <ul className="header-links">
                    <NavLink icon={LinkedIn} link="https://www.linkedin.com/in/alexandersumoski/" />
                    <NavLink icon={GitHub} link="https://github.com/Navkcalbeht32" />
-                   {/* <NavLink icon={Email}/> */}
                 </ul>
             </div>
         </header>

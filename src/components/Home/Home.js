@@ -26,19 +26,7 @@ export default function Home() {
                         <CustomLink linkText="View GitHub Account" link="https://github.com/Navkcalbeht32" target="_blank"/>
                     </Card>
                     <Card background="gray" title="Portfolio"  >
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
+                       
                         <CustomLink linkText="View Portfolio" link='/portfolio' />
                     </Card>
                 </div>

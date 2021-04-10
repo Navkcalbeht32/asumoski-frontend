@@ -17,12 +17,6 @@ export default function MobileNavbar() {
                     <div><FontAwesomeIcon icon={faLayerGroup} size="lg"  /></div>
                     <h5>Portfolio</h5>
                 </NavLink>
-                {/* <a>
-                    <div><FontAwesomeIcon icon={faUser} size="lg"  /></div>
-                    
-                    <h5>About</h5>
-                </a> */}
-                
             </div>
         </div>
     )
