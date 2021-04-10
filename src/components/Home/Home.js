@@ -40,8 +40,8 @@ export default function Home() {
                             <CustomLink linkText="Learn More about Next.js" link="https://nextjs.org/" target="_blank" />
                         </SectionCard>
                         
-                        <SectionCard text="I build sites for desktop & mobile devices, with speed and user experience prioritized. I build sites for desktop & mobile devices, with speed and user experience prioritized" >
-                            <CustomLink linkText="Learn More about SSR" link="https://developers.google.com/web/updates/2019/02/rendering-on-the-web" target="_blank" />
+                        <SectionCard text="SEO is more important than ever for getting to your website seen. Building accessible applications comes at the forefront of my work." >
+                            <CustomLink linkText="Learn More about SEO" link="https://moz.com/beginners-guide-to-seo" target="_blank" />
                         </SectionCard>
                     </div>
 
