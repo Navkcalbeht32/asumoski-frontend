@@ -4,8 +4,8 @@ import './Portfolio.scss'
 import sanityClinet from '../../client'
 import imageUrlBuilder from '@sanity/image-url'
 import Loader from '../Misc/Loader'
-import BlockContent from '@sanity/block-content-to-react'
 import BlockContentComponent from './BlockContent'
+import Github from '../../images/github.svg'
 
 
 
@@ -26,6 +26,8 @@ export default function SinglePage() {
                 title,
                 _id,
                 slug,
+                live,
+                github,
                 mainImage{
                     asset->{
                         url
@@ -55,6 +57,19 @@ export default function SinglePage() {
                 <div className="singlepost-coverimage">
                     <img src={urlFor(singlePost.mainImage).url()} />
                 </div>
+                <div className="singlepost-links">
+                    <a href={singlePost.live} target="_blank">
+                        <div className="singlepost-live">
+                            Live Site
+                        </div>
+                    </a>
+                    <a href={singlePost.github} target="_blank">
+                        <div className="singlepost-github">
+                            <img src={Github} />
+                        </div>
+                    </a>
+                </div>
+                
                 <div className="singlepost-block">
                     <BlockContentComponent singlePost={singlePost.body} />
                 </div>

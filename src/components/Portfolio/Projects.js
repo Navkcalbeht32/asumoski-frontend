@@ -17,6 +17,7 @@ export default function Projects() {
                 categories,
                 github,
                 tags,
+                live,
                 mainImage{
                     asset->{
                         _id,
@@ -46,7 +47,6 @@ export default function Projects() {
                             <div className="portfolio-card-text">
                                 <h3>{project.title}</h3>
                                 <h5>{project.subtitle}</h5>
-                                {/* <span>{project.tags}</span> */}
                             </div>
                         </div>
                         </Link>
