@@ -11,6 +11,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faLayerGroup, faUser } from '@fortawesome/free-solid-svg-icons'
 import Navbar from './components/Navbar/Navbar'
 import MobileNavbar from './components/Navbar/MobileNavbar'
+import ScrollToTop from './components/Misc/ScrollToTop';
 
 library.add(fab, faHome, faLayerGroup, faUser)
 
@@ -19,8 +20,9 @@ library.add(fab, faHome, faLayerGroup, faUser)
 function App() {
   return (
     <BrowserRouter>
-    <Navbar />
-    <MobileNavbar />
+      <ScrollToTop />
+      <Navbar />
+      <MobileNavbar />
       <Switch>
         <Route component={Home} exact path='/' />
         <Route component={SinglePost} path='/portfolio/:slug' />
