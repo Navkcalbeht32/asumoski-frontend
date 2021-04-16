@@ -36,7 +36,7 @@ export default function Home() {
                     subtitle="I build sites with speed and user experience prioritized">
                     <div className="section-cards">
                         
-                        <SectionCard text="I build sites for desktop & mobile devices, with speed and user experience prioritized. I build sites for desktop & mobile devices, with speed and user experience prioritized">
+                        <SectionCard text="I build sites for desktop & mobile devices, with speed and user experience prioritized.">
                             <CustomLink linkText="Learn More about Next.js" link="https://nextjs.org/" target="_blank" />
                         </SectionCard>
                         

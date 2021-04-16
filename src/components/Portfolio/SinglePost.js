@@ -8,9 +8,6 @@ import BlockContentComponent from './BlockContent'
 import Github from '../../images/github.svg'
 
 
-
-
-
 const builder = imageUrlBuilder(sanityClinet);
 function urlFor(source) {
     return builder.image(source)
