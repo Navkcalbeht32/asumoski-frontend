@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './Portfolio.scss'
 import sanityClinet from '../../client'
 import Loader from '../Misc/Loader'
+import ReactImageAppear from 'react-image-appear'
 
 
 export default function Projects() {
@@ -38,10 +39,11 @@ export default function Projects() {
                     <article className="portfolio-card">
                         <Link to={"/portfolio/" + project.slug.current} key={project.slug.current}>
                         <div className="portfolio-card-wrapper">
-                            <div className="portfolio-card-image">
-                            <img 
+                            <div className="portfolio-card-image"> 
+                            <img
                             alt={project.mainImage.alt}
                             src={project.mainImage.asset.url} 
+                           
                             />
                             </div>
                             <div className="portfolio-card-text">
